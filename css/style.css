@@ -1,0 +1,252 @@
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+@font-face {
+    font-family: 'PT Sans Narrow';
+    src: url('../fonts/PTN57F.eot?') format('eot');
+    src: url('../fonts/PTN57F.eot?') format('eot'), 
+         url('../fonts/PTN57F.woff') format('woff'), 
+         url('../fonts/PTN57F.ttf')  format('truetype'),
+         url('../fonts/PTN57F.svg#svgFontName') format('svg');
+    }
+
+@font-face {
+    font-family: 'PT Sans Narrow';
+src: url('../fonts/PTN77F.eot?');
+    src: url('../fonts/PTN77F.eot?') format('eot'), 
+         url('../fonts/PTN77F.woff') format('woff'), 
+         url('../fonts/PTN77F.ttf')  format('truetype'),
+         url('../fonts/PTN77F.svg#svgFontName') format('svg');
+	font-weight: bold;
+    }
+.main{
+    min-width: 1000px;
+    margin: 0 auto;
+    color: white;
+	background:white;
+    background: url('../images/bg-pattern.png');
+	font-family:PT Sans Narrow;
+}
+
+
+
+.header-menu{
+    height: 37px;
+    display: inline-block;
+    width: 545px;
+    vertical-align: top;
+    font-family: tahoma;
+}
+
+.header-menu-li{
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 20px;/*count*/
+    vertical-align: top;
+}
+
+.header-redline{
+    background:#df0000;
+    height: 4px;
+    width: 100%;
+}
+
+.shape {
+    display:inline-block;
+    background: url("../images/shape.png") no-repeat;
+    height: 30px;
+    width:  23px;
+    vertical-align: middle;
+    margin-top: 4px;
+    padding-right: 20px;
+}
+
+a:link, a:visited {
+    color: white;
+    text-decoration:none;
+}
+
+
+
+.mailto {
+    display:inline-block;
+    
+}
+
+.phone {
+    display:inline-block;
+}
+
+
+
+.header-bg {
+    display: inline-block;
+    width: 100%; /*count*/
+    background: #000;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#000), to(#171717));
+    background: -webkit-linear-gradient(#000, #171717);
+    background: -moz-linear-gradient(#000, #171717);
+    background: -ms-linear-gradient(#000, #171717);
+    background: -o-linear-gradient(#000, #171717);
+    background: linear-gradient(#000, #171717);
+    text-align: center;
+    font-family: tahoma;
+}
+
+.logo {
+    margin: 10px auto;
+    width: 456px;
+    position: relative;
+    right: 228px;
+}
+
+.content {
+	padding-bottom: 200px;
+}
+.slide {
+    font-size: 0;
+    position: relative;
+}
+
+.slider-next {
+
+	position:absolute;
+	right: 10px;
+	top: 300px;
+}
+
+.slider-prev {
+	position:absolute;
+	left: 10px;
+	top: 300px;
+}
+
+.img1p {
+    position: relative;
+    /*display: inline-block;*/ 
+    width: 240px;
+    float:left;
+    height: 280px;
+}
+
+.img2p {
+    position: relative;
+    /*display: inline-block;*/
+    width: 480px;
+    float: left;
+    height: 280px;
+}
+
+.caption {
+    position: absolute;
+    vertical-align: bottom;
+    width: 101%;
+    height: 80px;
+    bottom: 0px;
+    /*background: rgba(223,0,0,0.45);*/
+    background: url('../images/caption-bg66.png');
+}
+
+
+.slider-caption-txt {
+    font: 18px PT Sans Narrow;
+    color: #fff;
+    opacity: 1;
+    padding: 2px 20px 2px 12px;
+}
+
+.slider-caption-tags {
+    font: 14px PT Sans Narrow;
+    color: #f5c7c7;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+a .tag-link, .tag-link:link, tag-link: visited{
+    color: #f5c7c7;
+}
+.writing-box {
+	margin:0 auto;
+	margin-top: 20px;
+	width: 885px;
+	color: black;
+	font-size: 16px;
+}
+
+H3{
+	display: inline;
+	color: black;
+	font-size: 30px;
+}
+.writing-shape{
+	margin: 4px 0 0 15px;
+	padding: 0;
+	vertical-align: top;
+}
+
+
+a.writing-link, a.writing-link:visited, a.writing-link:active{
+	color: black;
+}
+
+.news-item {
+	margin-top: 10px;
+	width: 440px;
+	display:inline-block;
+	vertical-align: top;
+	
+}
+
+.news-item-right-column {
+	display: inline-block;
+	width: 186px;
+	vertical-align: top;
+	margin-left: 20px;
+
+}
+
+.news-item-left-column {
+	width: 230px;
+	display: inline-block;
+}
+
+.news-item-title {
+	font-weight: bold;
+}
+
+.news-item-text {
+	margin-top: 20px;
+	word-wrap: break-word;
+}
+
+.news-item-tag-link:link, .news-item-tag-link:active, .news-item-tag-link:visited {
+	color: #f88;
+	text-decoration: underline;
+}
+
+.news-item-tags {
+	color: #f88;
+	text-decoration: underline;
+	display:inline-block;
+}
+
+.news-item-date {
+	font-weight: bold;
+}
+
+
